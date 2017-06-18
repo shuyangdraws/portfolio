@@ -119,6 +119,7 @@ NAVIGATION OPACITY
   top:0;
   z-index:9999;
   background:rgba(0,0,0,0.95);
+ 
 }
 
 ul.menu-fullscreen{
@@ -130,7 +131,7 @@ ul.menu-fullscreen{
 }
 
 ul.menu-fullscreen li{
-  font-size:35px;
+  font-size:18px;
   text-align:center;
   line-height:70px;
   font-weight:500;
