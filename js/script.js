@@ -34,7 +34,7 @@ Ajax link page transitions
         if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
         
           setTimeout(function(){						
-          $('#preloader').delay(50).fadeIn(600);
+          $('#preloader').delay(10).fadeIn(300);
           $('html, body').delay(1000).animate({ scrollTop:  0  },1000);						
 					
 					setTimeout(function(){
@@ -46,7 +46,7 @@ Ajax link page transitions
 							finished: function() {
 								Website();
 								backLoading();
-								$('.opacity-nav').delay(50).fadeOut(600);
+								$('.opacity-nav').delay(10).fadeOut(300);
               },										
               waitForAll: true
 						});								
