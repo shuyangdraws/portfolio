@@ -34,8 +34,8 @@ Ajax link page transitions
         if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
         
           setTimeout(function(){						
-          $('#preloader').delay(10).fadeIn(300);
-          $('html, body').delay(1000).animate({ scrollTop:  0  },1000);						
+          $('#preloader').delay(10).fadeIn(10);
+          $('html, body').delay(10).animate({ scrollTop:  0  },10);						
 					
 					setTimeout(function(){
 							
@@ -46,11 +46,11 @@ Ajax link page transitions
 							finished: function() {
 								Website();
 								backLoading();
-								$('.opacity-nav').delay(10).fadeOut(300);
+								$('.opacity-nav').delay(10).fadeOut(10);
               },										
               waitForAll: true
 						});								
-					},1000);
+					},10);
 					},0);
 			}
 		});
@@ -83,11 +83,11 @@ function Website() {
 		$('body').jKit();
 		backgroundmenu();
 		setTimeout(function(){
-			$(".preloader").fadeOut(500);							
-		},2000);
+			$(".preloader").fadeOut(10);							
+		},300);
 		setTimeout(function(){
 			$('header').fadeIn();							
-		},500);
+		},10);
 }
 
 
@@ -168,13 +168,13 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Illustration ", "Storytelling", "Design "],
+            strings: ["Illustration ", "Storytelling", "Design"],
             typeSpeed: 100,
             backDelay: 500,
-            loop: false,
+            loop: true,
             contentType: 'html', // or text
             // defaults to false for infinite loop
-            loopCount: false,
+            loopCount: true,
         });
     }
 	}, 3000);
