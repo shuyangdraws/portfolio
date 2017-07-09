@@ -177,7 +177,7 @@ $(document).ready(function(){
             loopCount: true,
         });
     }
-	}, 3000);
+	}, 300);
 });
 }
 
@@ -233,11 +233,11 @@ Functions Show / Hide Preloader
 ---------------------------------------------*/
 
 function showPreloader() {
-  $(".preloader").fadeIn("slow");
+  $(".preloader").fadeIn("fast");
 }
 
 function hidePreloader() {
-  $(".preloader").delay(2000).fadeOut("slow");
+  $(".preloader").delay(2000).fadeOut("fast");
 }
 
 
