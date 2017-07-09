@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/7b59316e4a.js"></script>
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,15 +37,28 @@
 
 <div class="opacity-nav">
 
+        <div class="menu-index" id="buttons" style="z-index:999999">
+        <i class="fa  fa-close"></i>
+        </div>
+
     <ul class="menu-fullscreen">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about-us.html">About us</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="ajax-link" href="single.html">Home</a></li>
+      <li><a class="ajax-link" href="projects.html">Projects</a></li>
+      <li><a class="ajax-link" href="about-us.html">About me</a></li>
+      <li><a class="ajax-link" href="contact.html">Contact</a></li>
     </ul>
 
 </div>
+ <!--Header-->
+  <header id="fullscreen">
+    
+      <div class="logo" id="full" style="display:none;"><a class="ajax-link" href="index.html">Shuyang Dai</a></div>
+      
+        <div class="menu-index" style="display:none;" id="button">
+        <i class="fa fa-bars"></i>
+        </div>
 
+  </header>
   <!--Header-->
 <header class="boxed" id="header-white">
 
@@ -53,21 +66,19 @@
   
     <div class="logo"><a class="ajax-link" href="index.html">Shuyang Dai</a></div>
     <ul class="header-nav">
-      <li><a class="ajax-link" href="projects.html">Projects</a>
+      <li><a class="ajax-link" href="#">Projects</a>
         <ul>
-          <li><a class="ajax-link" href="projects.html">Projects</a></li> 
-          <li><a class="ajax-link" href="single.html">Single project</a></li> 
-          <li><a class="ajax-link" href="single-full.html">Single project fullscreen</a></li> 
+          <li><a class="ajax-link" href="#">Digital</a></li> 
+          <li><a class="ajax-link" href="#">Single project</a></li> 
+          <li><a class="ajax-link" href="#">Single project fullscreen</a></li> 
                    
         </ul>
       
       </li>
       
-      <li><a class="ajax-link" href="about-me.html">About me</a></li>
-      <li><a class="ajax-link" href="contact.html">Contact</a></li>
+      <li><a class="ajax-link" href="#">About me</a></li>
+      <li><a class="ajax-link" href="#">Contact</a></li>
     </ul>
-    
-    
     
   </div>
 
@@ -81,8 +92,7 @@
 
 
         <div class="text-intro" id="site-type">
-          <h1 class="typewrite"><span>Portfolio</span></h1>
-          <p>Please check my portfolio. All project is clean and simplicity modern style. You can buy this template.</p>
+        <h1 class="typewrite"><span></span></h1><!--Change on script.js-->
 
         </div>
 
@@ -164,11 +174,12 @@
 
     <div class="footer-margin">
       <div class="social-footer">
-        <a href="https://www.facebook.com/thomsooncom"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-behance"></i></a>
+        <a href="https://www.instagram.com/shuyang_art/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/shuyangdaiart/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/shuyangd"><i class="fa fa-facebook"></i></a>
       
       </div>     
-      <div class="copyright">Â© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+      <div class="copyright">© 2017 shuyangart.com. All Rights Reserved.</div>
       
 
     
