@@ -34,8 +34,8 @@ Ajax link page transitions
         if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
         
           setTimeout(function(){						
-          $('#preloader').delay(10).fadeIn(10);
-          $('html, body').delay(10).animate({ scrollTop:  0  },10);						
+          $('#preloader').delay(10).fadeIn(300);
+          $('html, body').delay(1000).animate({ scrollTop:  0  },1000);						
 					
 					setTimeout(function(){
 							
@@ -46,11 +46,11 @@ Ajax link page transitions
 							finished: function() {
 								Website();
 								backLoading();
-								$('.opacity-nav').delay(10).fadeOut(10);
+								$('.opacity-nav').delay(10).fadeOut(300);
               },										
               waitForAll: true
 						});								
-					},10);
+					},1000);
 					},0);
 			}
 		});
@@ -83,11 +83,11 @@ function Website() {
 		$('body').jKit();
 		backgroundmenu();
 		setTimeout(function(){
-			$(".preloader").fadeOut(10);							
-		},300);
+			$(".preloader").fadeOut(500);							
+		},2000);
 		setTimeout(function(){
 			$('header').fadeIn();							
-		},10);
+		},500);
 }
 
 
@@ -168,16 +168,16 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Illustration ", "Storytelling", "Design"],
+            strings: ["Illustration ", "Storytelling", "Design "],
             typeSpeed: 100,
             backDelay: 500,
-            loop: true,
+            loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
-            loopCount: true,
+            loopCount: false,
         });
     }
-	}, 300);
+	}, 3000);
 });
 }
 
@@ -233,11 +233,11 @@ Functions Show / Hide Preloader
 ---------------------------------------------*/
 
 function showPreloader() {
-  $(".preloader").fadeIn("fast");
+  $(".preloader").fadeIn("slow");
 }
 
 function hidePreloader() {
-  $(".preloader").delay(2000).fadeOut("fast");
+  $(".preloader").delay(2000).fadeOut("slow");
 }
 
 
