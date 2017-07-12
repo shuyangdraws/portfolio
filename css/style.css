@@ -901,3 +901,12 @@ textarea:focus{background:#f4f4f4; height:250px;}
     top: 70px;
   }
 }
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+}

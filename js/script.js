@@ -240,6 +240,20 @@ function hidePreloader() {
   $(".preloader").delay(2000).fadeOut("slow");
 }
 
+/*-------------------------------------------
+popout-window
+---------------------------------------------*/
+$('.js-open-box').on('click',function(){
+    $('.box-login').fadeIn(200);
+});
 
-
+//如果需要点击 overlay 关闭弹窗的话，注意阻止事件冒泡
+$('.box-login .section').on('click',function(e){
+    e.stopPropagation();
+});
+$('.overlay').on('click',function(){
+    $('.overlay').fadeOut(200,function(){
+        $(this).removeAttr('style');
+    });
+});
 })//End
